@@ -16,7 +16,7 @@ variable "cloudflare_account_id" {
   type        = string
 }
 
-variable "acm_certificate_arn" {
-  description = "ARN of the ACM certificate for CloudFront HTTPS (must be in us-east-1)."
-  type        = string
-}
+# variable "acm_certificate_arn" {
+#   description = "ARN of the ACM certificate for CloudFront HTTPS (must be in us-east-1)."
+#   type        = string
+# }

@@ -23,3 +23,12 @@ resource "aws_s3_bucket_website_configuration" "static_website_config" {
     suffix = "index.html"
   }
 }
+
+resource "aws_s3_object" "copy-to-s3" {
+  bucket = aws_s3_bucket.static_website.id
+  key    = "index.html"
+  source = "./index.html"
+
+  etag = filemd5("./index.html")
+
+}
