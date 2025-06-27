@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Awesome Static Website</title>
+    <style>
+        /* Basic CSS for a clean look */
+        body {
+            font-family: 'Inter', sans-serif; /* Using Inter font, common for web */
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6; /* Light gray background */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Full viewport height */
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .container {
+            background-color: #ffffff; /* White background for content */
+            padding: 40px;
+            border-radius: 12px; /* Rounded corners */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            max-width: 800px;
+            width: 90%; /* Responsive width */
+            box-sizing: border-box; /* Include padding in width */
+        }
+
+        h1 {
+            color: #2c3e50; /* Darker blue-gray for heading */
+            margin-bottom: 20px;
+            font-size: 2.5em; /* Larger heading */
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #3498db; /* Blue button */
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px; /* Rounded button corners */
+            text-decoration: none; /* No underline */
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+        }
+
+        .button:hover {
+            background-color: #2980b9; /* Darker blue on hover */
+            transform: translateY(-2px); /* Slight lift on hover */
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #7f8c8d; /* Muted gray for footer */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+        }
+    </style>
+    <!-- Optional: Link to Google Fonts for Inter if not locally available -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Your Static Website!</h1>
+        <p>This is a simple `index.html` file with inline CSS, ready to be deployed to your private S3 bucket and served via Cloudflare.</p>
+        <p>You can customize this content to build your beautiful static site, blog, or portfolio.</p>
+        <a href="#" class="button">Learn More</a>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 Your Company. All rights reserved.</p>
+    </div>
+</body>
+</html>
